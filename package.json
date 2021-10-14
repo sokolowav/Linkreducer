@@ -13,7 +13,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/sokolowav/MERN.git"
+		"url": "git+https://github.com/sokolowav/Linkreducer.git"
 	},
 	"keywords": [
 		"Mongo",

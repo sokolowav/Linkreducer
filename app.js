@@ -27,8 +27,8 @@ async function start() {
   try {
     await mongoose.connect(config.get('mongoUri'), {//подключаемся к Монго через метод коннект, добавляем await, чтобы дождаться выполнения промиса. Первый аргумент = адресс Uri БД, второй - набор опций
       useNewUrlParser: true, //!!!!!!!!!!!!!!!!!!!!!2 строки далее коментировать!!!!!!!!!!!!!!!!!!!
-      //useUnifiedTopology: true,
-      //useCreateIndex: true
+      useUnifiedTopology: true,
+      useCreateIndex: true
     })
     app.listen(PORT, () => console.log(`App has been started on port ${PORT}...`))//метод listen будующего сервера, где 1-ый аргумент = порт, второй = колл-бэк ф-ия //только после того, как БД подсоединится, будем запускать сервер
   } catch (e) {
